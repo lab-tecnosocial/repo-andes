@@ -8,7 +8,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 
 
 const icon = new Icon({
-    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
@@ -22,22 +22,25 @@ export default function MiMarker({ item }) {
         <Marker position={item.coord.split(", ")} icon={icon}>
             <Popup>
                 <img src={item.foto1} width="300px" alt={item.lugar} onClick={() => setOpen(true)} />
-                <p>Clic en la imagen para agrandar</p>
-                <p>{item.nombre}</p>
-                <p>{item.categoria}</p>
-                <p>{item.lugar}</p>
-                <p>{item.fecha}</p>
+
+                <p><strong>Nombre: {item.nombre}</strong></p>
+                <p><strong>Categoría: {item.categoria}</strong></p>
+                <p><strong>Lugar: {item.lugar}</strong></p>
+                <p><strong>País: {item.pais}</strong></p>
+                <p><strong>Fecha: {item.fecha}</strong></p>
+
+                <p>Clic en la imagen para agrandar y ver más fotografías</p>
                 <Lightbox
                     styles={{ container: { backgroundColor: "rgba(0, 0, 0, .8)" } }}
                     open={open}
                     close={() => setOpen(false)}
 
                     slides={[
-                        { src: item.foto1, description: 'Colorizado con IA' },
-                        { src: item.foto2, description: 'Original' },
-                        { src: item.foto3, description: 'Original' },
-                        { src: item.foto4, description: 'Original' },
-                        { src: item.foto5, description: 'Original' },
+                        { src: item.foto1, description: 'Fotografía 1' },
+                        { src: item.foto2, description: 'Fotografía 2' },
+                        { src: item.foto3, description: 'Fotografía 3' },
+                        { src: item.foto4, description: 'Fotografía 4' },
+                        { src: item.foto5, description: 'Fotografía 5' },
                     ]}
                     plugins={[Captions]}
                     captions={{ descriptionTextAlign: 'center' }}

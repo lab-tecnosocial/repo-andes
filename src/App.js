@@ -2,26 +2,30 @@ import './App.css';
 import Inicio from './components/Inicio';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#C9821E',
+        main: '#b92a49',
       },
     },
     typography: {
-      fontFamily: 'Cinzel Decorative'
+      fontFamily: 'Bungee Inline'
     }
   }
   );
   return (
     <ThemeProvider theme={theme}>
-       <CssBaseline />
-      <Inicio />
+      <CssBaseline />
+      <BrowserRouter>
+
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
 
 export default App;
+
+

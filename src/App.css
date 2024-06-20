@@ -8,9 +8,9 @@
 }
 
 .marker-cluster-small div {
-  background-color: #c9821ee9 !important;
+  background-color: #b92a49 !important;
   color: #FFF;
-  font-family: 'Cinzel Decorative' !important;
+  font-family: 'Bungee Inline' !important;
   font-weight: bold !important;
 }
 
@@ -19,13 +19,13 @@
 }
 
 .marker-cluster-medium div {
-  background-color: #c9821ee9 !important;
+  background-color: #b92a49 !important;
   color: #FFF;
-  font-family: 'Cinzel Decorative' !important;
+  font-family: 'Bungee Inline' !important;
   font-weight: bold !important;
 }
 
 .leaflet-control-attribution {
-  font-family: 'Cinzel Decorative';
+  font-family: 'Cutive Mono';
   font-size: 0.7rem;
 }

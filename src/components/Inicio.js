@@ -8,21 +8,21 @@ import Mapa from './Mapa';
 export default function Inicio() {
   return (
     <>
-      <AppBar position="relative" sx={{alignItems: 'center'}} >
-        <Toolbar sx={{height: '6vh'}}>
-          <Typography variant="h6" color="inherit" >
-            <b>La Cocha de Antes</b>
+      <AppBar position="relative" sx={{ alignItems: 'center' }} >
+        <Toolbar sx={{ height: '6vh' }}>
+          <Typography variant="h5" color="#e1b093" >
+            <b>Festividades en los Andes</b>
           </Typography>
         </Toolbar>
       </AppBar>
       <main>
-          <Mapa />
+        <Mapa />
       </main>
-      <Box sx={{height: '4vh'}}>
-          <Typography variant="subtitle2" color="inherit"   align="center" gutterBottom >
-            Mapa de fotografías antiguas colorizadas con Inteligencia Artificial
-          </Typography>
+      <Box sx={{ height: '4vh' }}>
+        <Typography variant="subtitle2" color="#e1b093" align="center" gutterBottom >
+          Mapa de fotografías de festividades en los Andes
+        </Typography>
       </Box>
-      </>
+    </>
   );
 }
