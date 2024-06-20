@@ -23,11 +23,13 @@ export default function MiMarker({ item }) {
             <Popup>
                 <img src={item.foto1} width="300px" alt={item.lugar} onClick={() => setOpen(true)} />
 
-                <p><strong>Nombre: {item.nombre}</strong></p>
-                <p><strong>Categoría: {item.categoria}</strong></p>
-                <p><strong>Lugar: {item.lugar}</strong></p>
-                <p><strong>País: {item.pais}</strong></p>
-                <p><strong>Fecha: {item.fecha}</strong></p>
+                <div id="datos">
+                    <p><b>Nombre:</b> {item.nombre}</p>
+                    <p><b>Categoría:</b> {item.categoria}</p>
+                    <p><b>Lugar:</b> {item.lugar}</p>
+                    <p><b>País:</b> {item.pais}</p>
+                    <p><b>Fecha:</b> {item.fecha}</p>
+                </div>
 
                 <p>Clic en la imagen para agrandar y ver más fotografías</p>
                 <Lightbox
