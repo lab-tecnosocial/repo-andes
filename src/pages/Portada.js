@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import portada from '../assets/portada.png'
 import labtecnosocial from '../assets/labtecnosocial.png'
+import gerardo from '../assets/gerardo.png'
 import nucleo from '../assets/nucleo.png'
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -28,14 +29,26 @@ function Portada() {
                 <p>
                     Gerardo Ichuta es investigador de música folclórica y tradicional andina. Para acceder a las fotografías contactarse a: <a href="mailto:gerard.ichu@gmail.com">gerard.ichu@gmail.com</a>
                 </p>
-                <p>
-                    Soy Gerardo, desde joven me interesé por conocer las expresiones folklóricas de la región andina de Bolivia en documentos e imágenes y con el paso del tiempo este interés fue incluyendo al folklore del centro sur peruano y el norte chileno. En un momento determinado al sacar conclusiones y querer plasmarlas en documentos, vi pertinente tener imágenes fotográficas propias para sustentar mis planteamientos por lo que se hizo una necesidad, el viajar a conocer las distintas fiestas de las que intentaba hablar. En este proceso me di cuenta que mucha información, no era del todo certera y que muchas fiestas eran muy complejas y polifacéticas, mostrándome un panorama inmenso de las fiestas patronales, los carnavales y concursos que fui registrando fotográficamente a lo largo de los años por lo que el número de sitios se multiplicó, llegando a un par centenas. Bueno, aquí les muestro una pequeña muestra de mi trabajo etnográfico, para que tengan un panorama de la diversidad folclórica de las fiestas andinas.
-                </p>
+
+                <div className="grid-container">
+                    <div className="grid-item1">
+                        <img id="gerardo" src={gerardo}>
+                        </img>
+                    </div>
+                    <div className="grid-item1">
+                        <p>
+                            Soy Gerardo, desde joven me interesé por conocer las expresiones folklóricas de la región andina de Bolivia en documentos e imágenes y con el paso del tiempo este interés fue incluyendo al folklore del centro sur peruano y el norte chileno. En un momento determinado al sacar conclusiones y querer plasmarlas en documentos, vi pertinente tener imágenes fotográficas propias para sustentar mis planteamientos por lo que se hizo una necesidad, el viajar a conocer las distintas fiestas de las que intentaba hablar. En este proceso me di cuenta que mucha información, no era del todo certera y que muchas fiestas eran muy complejas y polifacéticas, mostrándome un panorama inmenso de las fiestas patronales, los carnavales y concursos que fui registrando fotográficamente a lo largo de los años por lo que el número de sitios se multiplicó, llegando a un par centenas. Bueno, aquí les muestro una pequeña muestra de mi trabajo etnográfico, para que tengan un panorama de la diversidad folclórica de las fiestas andinas.
+                        </p>
+                    </div>
+                </div>
+
 
                 <div id="publicaciones">
                     <p><b>Publicaciones</b></p>
                     <p><a href="http://www.revistasbolivianas.ciencia.bo/pdf/ta/v14n1/v14n1a05.pdf">DE LA CIUDAD AL CAMPO: SIKURI – SIKURIADA</a></p>
                     <p><a href="https://www.youtube.com/watch?v=jsBeo6oxzD8">ENTRE FOLFLORE Y TRADICIÓN-DEM</a></p>
+                    <p><a href="https://www.facebook.com/musef.lapaz.bolivia/videos/2198180063704618">MÚSICA EN LAS FIESTAS PATRONALES EN EL CENTRO DE LOS ANDES, SU DISTRIBUCION EN EL ESPACIO FÍSICO Y EL TIEMPO</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=UusRrYiwdg8">FOLFLORE 2023</a></p>
                 </div>
 
             </div >
