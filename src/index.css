@@ -13,6 +13,9 @@ code {
     monospace;
 }
 
+.yarl__carousel img {
+  pointer-events: none;
+}
 
 
 a {
