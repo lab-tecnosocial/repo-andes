@@ -6,6 +6,8 @@ import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 import marker from '../assets/andes.png'
+import enlargeIcon from '../assets/enlargeIcon.png' // Import the enlargement icon
+
 
 
 const icon = new Icon({
@@ -24,7 +26,9 @@ export default function MiMarker({ item }) {
             <Popup>
                 <img src={item.foto1} width="300px" alt={item.lugar} onClick={() => setOpen(true)} />
 
+
                 <div id="datos">
+                    <p style={{ textAlign: 'center', fontSize: '10px', fontWeight: 'bold' }}>(Clic en la imagen para agrandar y ver más fotografías)</p>
                     <br></br>
                     <p><b>Nombre:</b> {item.nombre}</p>
                     <p><b>Categoría:</b> {item.categoria}</p>
@@ -32,7 +36,7 @@ export default function MiMarker({ item }) {
                     <p><b>País:</b> {item.pais}</p>
                     <p><b>Fecha:</b> {item.fecha}</p>
                     <br></br>
-                    <p>Clic en la imagen para agrandar y ver más fotografías</p>
+                    <img src={enlargeIcon} width='30px' style={{ position: 'absolute', bottom: '0', right: '0', cursor: 'pointer' }} alt="Enlarge" onClick={() => setOpen(true)} />
                 </div>
 
 

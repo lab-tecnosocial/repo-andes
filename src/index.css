@@ -41,19 +41,25 @@ a {
 }
 
 #gerardo {
-  width: 500px;
-  padding-left: 100px;
-  padding-top: 100px;
+  width: 300px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
+  /* center */
+  justify-content: center;
+  align-items: center;
 }
 
-.grid-item {
+.grid-item1 {
   text-align: center;
+}
+
+.grid-item1 img {
+  display: block;
+  margin-inline: auto;
 }
 
 #publicaciones a {
@@ -69,7 +75,11 @@ a {
 }
 
 #publicaciones {
-  padding-top: 50px;
+  padding-top: 10px;
+}
+
+#publicaciones p {
+  padding: 12px;
 }
 
 .logos-container {
@@ -81,8 +91,10 @@ a {
   padding-top: 50px;
 }
 
+
 .grid-item {
   text-align: center;
+
 }
 
 .logo {
