@@ -12,9 +12,8 @@ export default function Mapa() {
         >
             <TileLayer
                 attribution='<b>Desarrollado por el <a href="https://labtecnosocial.org/">Lab TecnoSocial</a></b>'
-                url="https://api.mapbox.com/styles/v1/labtecnosocial/clxjje0sx01hw01qmh9xb9mgk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGFidGVjbm9zb2NpYWwiLCJhIjoiY2x4amo4aXhvMXZtNjJpb3Ywa3VoaGpnNSJ9.8EKoh-jSYQi9Gppjb0YpPw"
+                url="https://api.mapbox.com/styles/v1/labtecnosocial/clxo1igtv02r401qk5o4sdal0/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGFidGVjbm9zb2NpYWwiLCJhIjoiY2x4amo4aXhvMXZtNjJpb3Ywa3VoaGpnNSJ9.8EKoh-jSYQi9Gppjb0YpPw"
             />
-
             {data.map((item, index) => (
                 <MiMarker key={index} item={item} />
             ))}
