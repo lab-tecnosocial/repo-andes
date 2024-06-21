@@ -15,6 +15,11 @@ code {
 
 
 
+a {
+  color: #b92a49;
+  text-decoration: none;
+}
+
 #datos p {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -22,7 +27,7 @@ code {
 
 
 #hero img {
-  width: 98.7vw;
+  width: 100%;
   padding-bottom: 50px;
 }
 
@@ -34,8 +39,9 @@ code {
   padding-right: 100px;
 }
 
-#publicaciones a {
+#publicaciones {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #b92a49;
@@ -72,4 +78,5 @@ code {
     padding-left: 50px;
     padding-right: 50px;
   }
+
 }

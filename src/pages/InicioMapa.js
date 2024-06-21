@@ -12,11 +12,6 @@ export default function Inicio() {
       <main>
         <Mapa />
       </main>
-      <Box sx={{ height: '4vh' }}>
-        <Typography variant="subtitle2" color="#e1b093" align="center" gutterBottom >
-          Mapa de fotografías de festividades en los Andes
-        </Typography>
-      </Box>
     </>
   );
 }
