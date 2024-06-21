@@ -24,14 +24,17 @@ export default function MiMarker({ item }) {
                 <img src={item.foto1} width="300px" alt={item.lugar} onClick={() => setOpen(true)} />
 
                 <div id="datos">
+                    <br></br>
                     <p><b>Nombre:</b> {item.nombre}</p>
                     <p><b>Categoría:</b> {item.categoria}</p>
                     <p><b>Lugar:</b> {item.lugar}</p>
                     <p><b>País:</b> {item.pais}</p>
                     <p><b>Fecha:</b> {item.fecha}</p>
+                    <br></br>
+                    <p>Clic en la imagen para agrandar y ver más fotografías</p>
                 </div>
 
-                <p>Clic en la imagen para agrandar y ver más fotografías</p>
+
                 <Lightbox
                     styles={{ container: { backgroundColor: "rgba(0, 0, 0, .8)" } }}
                     open={open}

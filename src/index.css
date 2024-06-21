@@ -1,4 +1,5 @@
-body {
+html body {
+  background-color: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Cutive Mono'
@@ -12,6 +13,63 @@ code {
     monospace;
 }
 
+
+
 #datos p {
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+#hero img {
+  width: 98.7vw;
+  padding-bottom: 50px;
+}
+
+#section p {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#publicaciones a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b92a49;
+}
+
+#publicaciones {
+  padding-top: 50px;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 20px;
+  background-color: black;
+  padding-top: 50px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+  .logos-container {
+    grid-template-columns: 1fr;
+    /* 1 columna */
+  }
+
+  #section p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
