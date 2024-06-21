@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.bd9bbb66.css",
+    "main.js": "./static/js/main.f597f33c.js",
+    "static/media/portada.png": "./static/media/portada.27f7cb83d8ec1de80e41.png",
+    "static/media/gerardo.png": "./static/media/gerardo.73bc3b428189ab2c4d43.png",
+    "static/media/nucleo.png": "./static/media/nucleo.dd0494964a93f37b637b.png",
+    "static/media/labtecnosocial.png": "./static/media/labtecnosocial.5b389a806da9681122a0.png",
+    "static/media/andes.png": "./static/media/andes.db4cb9e8bd376c503434.png",
+    "index.html": "./index.html",
+    "main.bd9bbb66.css.map": "./static/css/main.bd9bbb66.css.map",
+    "main.f597f33c.js.map": "./static/js/main.f597f33c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd9bbb66.css",
+    "static/js/main.f597f33c.js"
+  ]
+}
